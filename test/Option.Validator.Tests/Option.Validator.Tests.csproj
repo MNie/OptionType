@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Validator\Option.Validator.csproj" />
+    <ProjectReference Include="..\..\src\Option.Validator\Option.Validator.csproj" />
   </ItemGroup>
 
 </Project>
