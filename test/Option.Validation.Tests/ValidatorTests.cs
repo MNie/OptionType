@@ -2,6 +2,7 @@ namespace Option.Validator.Tests
 {
     using System.Collections.Generic;
     using Shouldly;
+    using Validation;
     using Validator;
     using Xunit;
 

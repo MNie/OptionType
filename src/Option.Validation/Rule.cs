@@ -1,4 +1,4 @@
-﻿namespace Option.Validator
+﻿namespace Option.Validation
 {
     using System;
 

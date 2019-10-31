@@ -1,5 +1,5 @@
 ﻿// ReSharper disable VirtualMemberCallInConstructor
-namespace Option.Validator
+namespace Option.Validation
 {
     using System.Collections.Generic;
     using System.Linq;

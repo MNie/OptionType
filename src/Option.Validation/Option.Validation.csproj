@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <Authors>Michał Niegrzybowski</Authors>
@@ -10,11 +10,15 @@
     <Product>OptionType.Validation</Product>
     <Description>Implementation of option type holding a value or representing a none.</Description>
     <Copyright>Michał Niegrzybowski</Copyright>
-    <PackageLicenseUrl>https://github.com/MNie/OptionType/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://github.com/MNie/OptionType/blob/master/LICENSE</PackageLicense>
     <PackageProjectUrl>https://github.com/MNie/OptionType</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MNie/OptionType</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Option, OptionType, Functional Programming, Validation</PackageTags>
+    <DebugType>Full</DebugType>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
