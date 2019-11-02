@@ -36,7 +36,7 @@ namespace Option.Tests
                 result.Value.ShouldBe("walesa");
             }
         }
-
+        
         public class WhenOptionHasNotValue
         {
             private readonly Option<string> _option = Option<string>.None;
