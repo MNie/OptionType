@@ -1,10 +1,11 @@
 ﻿namespace Option.Validation
 {
     using System;
+    using static OptionExtension;
 
     public interface IRule<TError>
     {
-        Option<TError> Apply();
+        IOption<TError> Apply();
     }
 
     public class Rule<TError> : IRule<TError>
@@ -18,8 +19,8 @@
             _error = error;
         }
 
-        public Option<TError> Apply() => _predicate() 
-            ? Option<TError>.None 
-            : Option<TError>.Some(_error);
+        public IOption<TError> Apply() => _predicate()
+            ? None<TError>()
+            : Some<TError>(_error);
     }
 }

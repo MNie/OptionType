@@ -10,7 +10,9 @@ namespace Option.Validation
 
         protected abstract IEnumerable<IRule<TError>> GetRules();
 
-        public IEnumerable<TError> Validate() => _rules.Apply().Select(x => x.Value);
+        public IEnumerable<TError> Validate() => _rules
+            .Apply()
+            .Select(x => (x is Some<TError> some ? some : default).Value);
 
         protected Validator() =>
             _rules = GetRules();

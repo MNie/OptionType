@@ -5,6 +5,9 @@
 
     public static class RulesExtension
     {
-        public static IEnumerable<Option<TError>> Apply<TError>(this IEnumerable<IRule<TError>> rules) => rules.Select(x => x.Apply()).Where(x => x.IsSome);
+        public static IEnumerable<IOption<TError>> Apply<TError>(this IEnumerable<IRule<TError>> rules) =>
+            rules
+                .Select(x => x.Apply())
+                .Where(x => x.IsSome());
     }
 }
